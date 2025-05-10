@@ -1,0 +1,56 @@
+<!--
+Karina Tumko
+ktumko@ucsc.edu
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p id="performance">ms: 0 fps: 0</p>
+
+    <p>
+    Camera Angle <input type="range" min="0" max="360" value="5" class="slider" id="angleSlide">
+    <p>
+
+    <p id="dev-notes" style="color: black; font-family: monospace;">
+      <strong>Notes for Grader:</strong><br><br>
+
+      • <strong>Mouse Controls:</strong> Click and drag horizontally to rotate the camera left/right. Vertical dragging allows the user to look up/down. The original Q and E keys still work for rotation as well.<br><br>
+    
+      • <strong>Textures:</strong> I used multiple textures. <code>block.jpg</code> is applied to the cubes, and <code>sky.jpg</code> is applied to the sky.<br><br>
+    
+      • <strong>Performance:</strong> Due to the large 32×32 map with varying cube heights, my performance is very very slow. I apologize in advance, the canvas may take a few seconds to appear after the page loads and my webpage frequently crashes.<br><br>
+    
+      • <strong>Movement:</strong> The WASD keys allow basic movement. However, pressing the movement keys too quickly in succession may cause the webpage to crash, so just another heads up.<br><br>
+    
+      • <strong>Mouse Warning:</strong> Mouse drag rotation works, but, similarly, fast or repeated dragging may also cause the webpage to freeze or crash.<br><br>
+    
+      This assignment is not my best work, I have had some things going on in my personal life outside school and I've been trying to keep up with my workload on top of that.
+    </p>
+      
+
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+
+
+    <script src="BlockyAnimal.js"></script>
+  </body>
+</html>
